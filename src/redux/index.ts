@@ -7,7 +7,7 @@ import {
 } from 'redux'
 import thunk from 'redux-thunk'
 
-import { ROOT_REDUCERS } from '@reducers/index'
+import { ROOT_REDUCERS } from 'src/redux/reducers/index'
 import { useMemo } from 'react'
 
 const COMPOSE_ENHANCERS = composeWithDevTools(applyMiddleware(thunk))
