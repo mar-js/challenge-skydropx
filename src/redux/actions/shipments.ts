@@ -1,12 +1,12 @@
 import { Dispatch } from 'redux'
 
-import { InterfacePostCreateShipments, InterfacePostShipments } from '@tools/interface'
+import { InterfacePostCreateShipments, InterfacePostShipments } from 'src/assets/tools/interface'
 
 import {
   POST_SHIPMENTS,
   POST_SHIPMENTS_SUCCESS,
   POST_SHIPMENTS_ERROR
-} from '@types/shipments'
+} from 'src/redux/types/shipments'
 
 export const POST_SHIPMENTS_ACTIONS = (d: InterfacePostShipments) => async (dispatch: Dispatch): Promise<any> => {
   dispatch({ type: POST_SHIPMENTS })

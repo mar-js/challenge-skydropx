@@ -3,18 +3,14 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import {
-  InterfaceInitialState,
-  InterfaceLabel,
-  InterfacePostLabel
-} from '@tools/interface'
-import { RootState } from '@reducers/index'
-import { GET_LABEL_ACTIONS } from '@actions/label'
-import { RESET_POST_LABEL } from '@types/label'
+import { InterfaceInitialState, InterfaceLabel } from 'src/assets/tools/interface'
+import { RootState } from 'src/redux/reducers/index'
+import { GET_LABEL_ACTIONS } from 'src/redux/actions/label'
+import { RESET_POST_LABEL } from 'src/redux/types/label'
 
 import Head from 'next/head'
-import { Section } from '@layouts/Section'
-import { LoaderLo } from '@components/LoaderLo'
+import { Section } from 'src/layouts/Section'
+import { LoaderLo } from 'src/components/LoaderLo'
 import {
   Box,
   Button,
@@ -26,7 +22,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
 import WebIcon from '@mui/icons-material/Web'
 
 interface InterfacePostLabelsUseSelector extends InterfaceInitialState {
-  postLabel: InterfaceLabel | InterfacePostLabel;
+  postLabel: InterfaceLabel;
 }
 
 interface InterfaceGetLabelsUseSelector extends InterfaceInitialState {

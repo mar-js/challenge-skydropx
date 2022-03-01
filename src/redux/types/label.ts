@@ -1,4 +1,4 @@
-import { InterfaceLabel } from '@tools/interface'
+import { InterfaceLabel } from 'src/assets/tools/interface'
 
 export const POST_LABEL = 'POST_LABEL'
 export const RESET_POST_LABEL = 'RESET_POST_LABEL'

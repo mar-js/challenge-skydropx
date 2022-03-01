@@ -1,5 +1,5 @@
-import { Title } from '@components/Title'
 import { Box } from '@mui/material'
+import { Title } from 'src/components/Title'
 
 export const Header: React.FC = () => (
   <Box

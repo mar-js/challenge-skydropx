@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux'
 
-import { InterfaceLabel } from '@tools/interface'
+import { InterfaceLabel } from 'src/assets/tools/interface'
 
 import {
   POST_LABEL,
@@ -9,7 +9,7 @@ import {
   GET_LABEL_SUCCESS,
   POST_LABEL_ERROR,
   GET_LABEL_ERROR
-} from '@types/label'
+} from 'src/redux/types/label'
 
 export const POST_LABEL_ACTIONS = (rate_id: number) => async (dispatch: Dispatch): Promise<any> => {
   dispatch({ type: POST_LABEL })

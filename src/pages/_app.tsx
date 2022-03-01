@@ -1,8 +1,8 @@
 import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
-import { useStore } from '../redux'
+import { useStore } from 'src/redux'
 
-import { Header } from '@layouts/Header'
+import { Header } from 'src/layouts/Header'
 
 function App({ Component, pageProps }: AppProps) {
   const STORE = useStore(pageProps.initialReduxState)

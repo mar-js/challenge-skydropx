@@ -2,8 +2,8 @@ import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 
-import { RootState } from '@reducers/index'
-import { RESET_POST_SHIPMENTS } from '@types/shipments'
+import { RootState } from 'src/redux/reducers/'
+import { RESET_POST_SHIPMENTS } from 'src/redux/types/shipments'
 
 import {
   InterfaceInitialState,
@@ -26,7 +26,7 @@ import {
 } from '@mui/material'
 import Link from 'next/link'
 
-import { TableRowCustom } from '@styles/tableServicesStyles'
+import { TableRowCustom } from 'src/assets/styles/tableServicesStyles'
 
 interface InterfacePostShipmentsUseSelector extends InterfaceInitialState {
   postShipments: InterfacePostCreateShipments;

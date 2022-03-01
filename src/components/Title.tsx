@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 import { useDispatch } from 'react-redux'
 
-import { RESET_POST_LABEL, RESET_GET_LABEL } from '@types/label'
-import { RESET_POST_SHIPMENTS } from '@types/shipments'
+import { RESET_POST_LABEL, RESET_GET_LABEL } from 'src/redux/types/label'
+import { RESET_POST_SHIPMENTS } from 'src/redux/types/shipments'
 
 import Link from 'next/link'
 import { Typography } from '@mui/material'

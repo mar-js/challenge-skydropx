@@ -2,8 +2,8 @@ import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 
 import Head from 'next/head'
-import { Section } from '@layouts/Section'
-import { CardService } from '@components/CardService'
+import { Section } from 'src/layouts/Section'
+import { CardService } from 'src/components/CardService'
 
 const Service: NextPage = () => {
   const { query: { id } } = useRouter()

@@ -2,9 +2,9 @@ import { useRef } from 'react'
 import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
 
-import { InterfacePostShipments } from '@tools/interface'
+import { InterfacePostShipments } from 'src/assets/tools/interface'
 
-import { POST_SHIPMENTS_ACTIONS } from '@actions/shipments'
+import { POST_SHIPMENTS_ACTIONS } from 'src/redux/actions/shipments'
 
 import {
   Box,

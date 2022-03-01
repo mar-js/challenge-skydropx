@@ -1,14 +1,14 @@
 import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { RootState } from '@reducers/index'
-import { POST_LABEL_ACTIONS } from '@actions/label'
+import { RootState } from 'src/redux/reducers/'
+import { POST_LABEL_ACTIONS } from 'src/redux/actions/label'
 
 import {
   InterfaceCardService,
   InterfaceInitialState,
   InterfacePostCreateShipments
-} from '@tools/interface'
+} from 'src/assets/tools/interface'
 
 import {
   Button,

@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
 
 import Head from 'next/head'
-import { Section } from '@layouts/Section'
-import { TableServices } from '@components/TableServices'
+import { Section } from 'src/layouts/Section'
+import { TableServices } from 'src/components/TableServices'
 
 const Services: NextPage = () => (
   <>

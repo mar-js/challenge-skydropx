@@ -129,7 +129,9 @@ export interface InterfaceLabel {
         }
       ];
     }
-  }
+  };
+  message: string;
+  code: string;
 }
 
 export interface InterfacePostLabel {

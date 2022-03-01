@@ -1,4 +1,4 @@
-import { InterfaceInitialState, InterfacePostCreateShipments } from '@tools/interface'
+import { InterfaceInitialState, InterfacePostCreateShipments } from 'src/assets/tools/interface'
 
 import {
   POST_SHIPMENTS,
@@ -6,7 +6,7 @@ import {
   POST_SHIPMENTS_SUCCESS,
   POST_SHIPMENTS_ERROR,
   PostShipmentsActionTypes
-} from '@types/shipments'
+} from 'src/redux/types/shipments'
 
 interface InterfaceReducerPostShipments extends InterfaceInitialState {
   postShipments: InterfacePostCreateShipments | any;

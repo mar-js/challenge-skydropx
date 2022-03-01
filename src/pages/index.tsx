@@ -1,8 +1,8 @@
 import { NextPage } from 'next'
 
 import Head from 'next/head'
-import { Main } from '@layouts/Main'
-import { Form } from '@components/Form'
+import { Main } from 'src/layouts/Main'
+import { Form } from 'src/components/Form'
 
 const Home: NextPage = () => (
   <>

@@ -1,4 +1,4 @@
-import { InterfacePostCreateShipments } from '@tools/interface'
+import { InterfacePostCreateShipments } from 'src/assets/tools/interface'
 
 export const POST_SHIPMENTS = 'POST_SHIPMENTS'
 export const RESET_POST_SHIPMENTS = 'RESET_POST_SHIPMENTS'

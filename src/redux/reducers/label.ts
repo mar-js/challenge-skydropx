@@ -1,4 +1,4 @@
-import { InterfaceInitialState, InterfaceLabel } from '@tools/interface'
+import { InterfaceInitialState, InterfaceLabel } from 'src/assets/tools/interface'
 
 import {
   POST_LABEL,
@@ -11,7 +11,7 @@ import {
   GET_LABEL_ERROR,
   PostLabelActionTypes,
   GetLabelActionTypes
-} from '@types/label'
+} from 'src/redux/types/label'
 
 interface InterfaceReducerPostLabel extends InterfaceInitialState {
   postLabel: InterfaceLabel | any;
