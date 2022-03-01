@@ -28,12 +28,12 @@
     "react-hooks"
   ],
   "rules": {
-    "array-element-newline": 0,
+    "array-element-newline": [2, { "multiline": true, "minItems": 3 }],
     "array-bracket-newline": [2, { "multiline": true, "minItems": 3 }],
     "array-bracket-spacing": [
       2,
       "always",
-      { "objectsInArrays": false, "arraysInArrays": false }
+      { "objectsInArrays": true, "arraysInArrays": true }
     ],
     "arrow-body-style": 0,
     "block-scoped-var": 2,
@@ -45,6 +45,13 @@
       }
     ],
     "camelcase": 0,
+    "comma-dangle": [2, {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+    }],
     "comma-spacing": [
       2,
       {
@@ -203,8 +210,14 @@
     "no-void": 0,
     "no-warning-comments": 0,
     "no-with": 2,
-    "object-curly-newline": 0,
+    "object-curly-newline": [2, {
+      "ObjectExpression": { "multiline": true, "minProperties": 4 },
+      "ObjectPattern": { "multiline": true, "minProperties": 4 },
+      "ImportDeclaration":{ "multiline": true, "minProperties": 4 },
+      "ExportDeclaration": { "multiline": true, "minProperties": 4 }
+    } ],
     "object-curly-spacing": [2, "always"],
+    "object-property-newline": 2,
     "one-var": 0,
     "operator-assignment": 0,
     "operator-linebreak": [2, "after"],
@@ -278,6 +291,7 @@
     "vars-on-top": 2,
     "wrap-iife": [2, "any"],
     "wrap-regex": 0,
-    "yoda": [2, "never"]
+    "yoda": [2, "never"],
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }

@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@styles/*": ["assets/styles/*"],
-      "@pages/*": ["pages/*"],
-      "@layouts/*": ["layouts/*"],
-      "@components/*": ["components/*"]
+      "@pages/*": ["src/pages/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@components/*": ["src/components/*"],
+      "@actions/*": ["src/redux/actions/*"],
+      "@reducers/*": ["src/redux/reducers/*"],
+      "@types/*": ["src/redux/types/*"],
+      "@tools/*": ["src/assets/tools/*"],
+      "@styles/*": ["src/assets/styles/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
