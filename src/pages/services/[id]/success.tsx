@@ -42,7 +42,7 @@ const Success: NextPage = () => {
   }
 
   useEffect(() => {
-    if (false) GET_LABEL(postLabel.data.id)
+    if (postLabel !== null) if (!postLabel.message) GET_LABEL(postLabel.data.id)
   }, [ postLabel ])
 
   return (
@@ -51,7 +51,7 @@ const Success: NextPage = () => {
         <title>Success | Challenge Skydrops</title>
       </Head>
       <Section>
-        { fetchingPost ? (
+        { fetchingPost && postLabel === null ? (
           <LoaderLo />
         ) : postLabel.message ? (
           <>
