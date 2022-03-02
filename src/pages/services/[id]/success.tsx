@@ -51,9 +51,9 @@ const Success: NextPage = () => {
         <title>Success | Challenge Skydrops</title>
       </Head>
       <Section>
-        { fetchingPost && postLabel === undefined ? (
+        { fetchingPost || postLabel === undefined ? (
           <LoaderLo />
-        ) : postLabel.message || postLabel.data.attributes.status === 'ERROR' || postLabel.data.attributes.status === null ? (
+        ) : postLabel.message || postLabel.data.attributes.status === 'ERROR' ? (
           <>
             <Typography
               variant="h3"
@@ -73,7 +73,7 @@ const Success: NextPage = () => {
           </>
         ) : (
           <>
-            { fetchingGet && getLabel === undefined ? (
+            { fetchingGet || getLabel === undefined ? (
               <>
                 <Skeleton height={ 100 } animation="wave" />
                 <Box
