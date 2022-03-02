@@ -10,6 +10,7 @@ import {
   InterfacePostCreateShipments
 } from 'src/assets/tools/interface'
 
+import { LoaderLo } from './LoaderLo'
 import {
   Button,
   Card,
@@ -40,7 +41,9 @@ export const CardService: React.FC<InterfaceCardService> = ({ idService }) => {
 
   return (
     <>
-      { fetching && !GET_SHIPMENT.length ? '...' : (
+      { fetching && !GET_SHIPMENT.length ? (
+        <LoaderLo />
+      ) : (
         <Card sx={ { padding: '10px' } }>
           <CardContent>
             <Typography
