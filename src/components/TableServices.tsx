@@ -15,7 +15,12 @@ import { LoaderLo } from './LoaderLo'
 import {
   Box,
   Button,
+  FormControl,
+  InputLabel,
+  MenuItem,
   Paper,
+  Select,
+  SelectChangeEvent,
   Table,
   TableBody,
   TableCell,
@@ -44,6 +49,7 @@ export const TableServices: React.FC = () => {
   const [ filterByBestOption, setFilterByBestOption ] = useState<boolean>(false)
   const [ filterByMinPriceOption, setFilterByMinPriceOption ] = useState<boolean>(false)
   const [ filterByMinDayOption, setFilterByMinDayOption ] = useState<boolean>(false)
+  const [ selectOption, setSelectOption ] = useState<string>('')
   const HISTORY = useRouter()
   const DISPATCH = useDispatch()
   const HANDLE_CLICK = () => {
@@ -83,6 +89,22 @@ export const TableServices: React.FC = () => {
     minNumberPrice,
     minNumberDay
   ])
+
+  const HANDLE_SELECT = (event: SelectChangeEvent) => {
+    const VALUE = event.target.value
+
+    setSelectOption(VALUE)
+
+    if (VALUE === 'ver todos') {
+      setFilterByBestOption(false)
+      setFilterByMinPriceOption(false)
+      setFilterByMinDayOption(false)
+    }
+    if (VALUE === 'ver mejor opción') setFilterByBestOption(!filterByBestOption)
+
+    if (VALUE === 'ver menor día') setFilterByMinDayOption(!filterByMinDayOption)
+    if (VALUE === 'ver menor precio') setFilterByMinPriceOption(!filterByMinPriceOption)
+  }
 
   return (
     <>
@@ -126,24 +148,25 @@ export const TableServices: React.FC = () => {
                   color="secondary"
                   size="medium"
                 >Volver</Button>
-                <Button
-                  onClick={ () => setFilterByMinDayOption(!filterByMinDayOption) }
-                  variant="contained"
-                  color="info"
-                  size="small"
-                >{ filterByMinDayOption ? 'Ver todas las opciones' : 'Ver en menor día' }</Button>
-                <Button
-                  onClick={ () => setFilterByMinPriceOption(!filterByMinPriceOption) }
-                  variant="contained"
-                  color="info"
-                  size="small"
-                >{ filterByMinPriceOption ? 'Ver todas las opciones' : 'Ver menor precio' }</Button>
-                <Button
-                  onClick={ () => setFilterByBestOption(!filterByBestOption) }
-                  variant="contained"
-                  color="warning"
-                  size="large"
-                >{ filterByBestOption ? 'Ver todas las opciones' : 'Ver mejor opción' }</Button>
+                <FormControl sx={ {
+                  m: 1,
+                  minWidth: 80
+                } }
+                >
+                  <InputLabel id="select-label">Filter</InputLabel>
+                  <Select
+                    labelId="select-label"
+                    id="select"
+                    label="Filter"
+                    value={ selectOption }
+                    onChange={ HANDLE_SELECT }
+                  >
+                    <MenuItem selected value="ver todos"><em>Ver todos</em></MenuItem>
+                    <MenuItem disabled={ filterByBestOption || filterByMinDayOption || filterByMinPriceOption } value="ver mejor opción">Ver mejor opción</MenuItem>
+                    <MenuItem disabled={ filterByMinDayOption || filterByMinPriceOption || filterByBestOption } value="ver menor día">Ver menor día</MenuItem>
+                    <MenuItem disabled={ filterByMinPriceOption || filterByBestOption || filterByMinDayOption } value="ver menor precio">Ver menor precio</MenuItem>
+                  </Select>
+                </FormControl>
               </Box>
               <TableContainer component={ Paper }>
                 <Table>
