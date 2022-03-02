@@ -53,7 +53,7 @@ const Success: NextPage = () => {
       <Section>
         { fetchingPost && postLabel === undefined ? (
           <LoaderLo />
-        ) : postLabel.message || postLabel.data.attributes.status === 'ERROR' ? (
+        ) : postLabel.message || postLabel.data.attributes.status === 'ERROR' || postLabel.data.attributes.status === null ? (
           <>
             <Typography
               variant="h3"
