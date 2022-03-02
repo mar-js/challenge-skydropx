@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este es un proyecto [Next.js](https://nextjs.org/) construido con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Empezar
 
-First, run the development server:
+Primero, levanta un servidor local para el desarrollo:
 
 ```bash
 npm run dev
@@ -10,25 +10,31 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) con tú navegador para ver el resultado.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Puede comenzar a editar la página modificando `pages/index.tsx`. La página se actualiza automáticamente a medida que edita el archivo.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Segundo, debes poner tu API_KEY en un archivo llamado `/env.local` para así no tener problemas con las peticiones al servidor:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Code API_KEY](/src/assets/images/code-api_key.png "Code API_KEY")
 
-## Learn More
+_Para saber más sobre las env en next usadas en el navegador entra a: [Next env](https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser)_
 
-To learn more about Next.js, take a look at the following resources:
+### Nota:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- La app tiene integrado [Eslint](https://eslint.org/) y ya tiene unas reglas configuradas, para cambiarlas tines que ir a `/.eslintrc.json` ahí podes agregar, eliminar o cambiar reglas.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Aprende más
 
-## Deploy on Vercel
+Para obtener más información sobre Next.js, eche un vistazo a los siguientes recursos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js Documentation](https://nextjs.org/docs) - aprende sobre Next.js: características y API.
+- [Learn Next.js](https://nextjs.org/learn) - un tutorial interactivo.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Puedes revisar [the Next.js GitHub repository](https://github.com/vercel/next.js/) - ¡Sus comentarios y contribuciones son bienvenidos!
+
+## Deploy en Netlify
+
+La app está subida en Netlify que con tan solo decirle y darle permiso al repositorio se encargará de hacer deploy, automáticamente le instalará dependencias para que la app pueda correr sin ningún inconveniente y al hacer cambios en el repositorio de la app, Netlify hará de vuelta el deploy para tener las ultimas actualizaciones.
+
+- [Netfliy](https://www.netlify.com/) - entra a su pagina para conocer más.
