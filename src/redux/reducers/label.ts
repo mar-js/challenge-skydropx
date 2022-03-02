@@ -32,7 +32,7 @@ export const REDUCER_POST_LABEL = (state: InterfaceReducerPostLabel, action: Pos
       return {
         ...state,
         fetching: false,
-        postLabel: null
+        postLabel: undefined
       }
     case POST_LABEL_SUCCESS:
       return {
@@ -62,7 +62,7 @@ export const REDUCER_GET_LABEL = (state: InterfaceReducerGetLabel, action: GetLa
       return {
         ...state,
         fetching: false,
-        getLabel: null
+        getLabel: undefined
       }
     case GET_LABEL_SUCCESS:
       return {

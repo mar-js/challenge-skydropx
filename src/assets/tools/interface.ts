@@ -143,7 +143,3 @@ export interface InterfaceTableServicesBestOption {
   days: number;
   prices: number;
 }
-
-export interface InterfaceServicePageProps {
-  id: string | string[] | any;
-}

@@ -23,7 +23,7 @@ export const REDUCER_POST_SHIPMENTS = (state: InterfaceReducerPostShipments, act
       return {
         ...state,
         fetching: false,
-        postShipments: null
+        postShipments: undefined
       }
     case POST_SHIPMENTS_SUCCESS:
       return {
