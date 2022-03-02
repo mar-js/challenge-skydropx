@@ -238,7 +238,9 @@
       { "when": "always", "allowMultiline": false, "children": true }
     ],
     "react/jsx-indent-props": [2, 2],
-    "react/jsx-space-before-closing": [2, "always"],
+    "react/jsx-tag-spacing": [2, {
+      "beforeSelfClosing": "always"
+    }],
     "react/jsx-no-bind": [
       2,
       {
