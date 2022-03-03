@@ -11,7 +11,7 @@ import { CardService } from 'src/components/CardService'
 const Service: NextPage = ({ id }: InferGetServerSidePropsType<typeof getServerSideProps>) => (
   <>
     <Head>
-      <title>Service | Challenge Skydrops</title>
+      <title>Service | Challenge Skydropx</title>
     </Head>
     <Section>
       <CardService idService={ id } />

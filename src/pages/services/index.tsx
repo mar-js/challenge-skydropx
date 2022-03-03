@@ -7,7 +7,7 @@ import { TableServices } from 'src/components/TableServices'
 const Services: NextPage = () => (
   <>
     <Head>
-      <title>Services | Challenge Skydrops</title>
+      <title>Services | Challenge Skydropx</title>
     </Head>
     <Section>
       <TableServices />

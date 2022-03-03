@@ -48,7 +48,7 @@ const Success: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Success | Challenge Skydrops</title>
+        <title>Success | Challenge Skydropx</title>
       </Head>
       <Section>
         { fetchingPost || postLabel === undefined ? (

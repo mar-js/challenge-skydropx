@@ -33,7 +33,7 @@ export const Title: React.FC = () => {
         color="grey.500"
         fontWeight="bold"
         mb="10px"
-      >Challenge Skydrops</Typography>
+      >Challenge Skydropx</Typography>
     </Link>
   )
 }

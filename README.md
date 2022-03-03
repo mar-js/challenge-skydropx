@@ -1,4 +1,4 @@
-# [Challenge Skydrops](challenge-skydrops.netlify.app/)
+# [Challenge Skydropx](challenge-skydropx.netlify.app/)
 
 ---
 
@@ -9,7 +9,7 @@ Este es un proyecto [Next.js](https://nextjs.org/) construido con [`create-next-
 #### 1. clonar el repositorio:
 
 ```bash
-git clone https://github.com/mar-js/challenge-skydrops.git
+git clone https://github.com/mar-js/challenge-skydropx.git
 ```
 
 #### 2. instalar las dependencias:

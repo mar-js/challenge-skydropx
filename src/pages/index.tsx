@@ -7,7 +7,7 @@ import { Form } from 'src/components/Form'
 const Home: NextPage = () => (
   <>
     <Head>
-      <title>Home | Challenge Skydrops</title>
+      <title>Home | Challenge Skydropx</title>
     </Head>
     <Main>
       <Form />
