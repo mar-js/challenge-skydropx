@@ -6,13 +6,13 @@ Este es un proyecto [Next.js](https://nextjs.org/) construido con [`create-next-
 
 ## Empezar
 
-##### Primero, clonar el repositorio:
+#### 1. clonar el repositorio:
 
 ```bash
 git clone https://github.com/mar-js/challenge-skydrops.git
 ```
 
-##### Segundo, instalar las dependencias:
+#### 2. instalar las dependencias:
 
 ```bash
 npm i
@@ -20,13 +20,13 @@ npm i
 yarn install
 ```
 
-##### Tercero, debes poner tu API_KEY en un archivo llamado `/env.local` para no tener problemas con las peticiones al servidor:
+#### 3. debes poner tu API_KEY en un archivo llamado `/env.local` para no tener problemas con las peticiones al servidor:
 
 ![Code API_KEY](/src/assets/images/code-api_key.png "Code API_KEY")
 
 _Para saber más sobre las env en next usadas en el navegador entra a: [Next env](https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser)_
 
-##### Cuarto, levanta un servidor local para el desarrollo:
+#### 4. levanta un servidor local para el desarrollo:
 
 ```bash
 npm run dev
