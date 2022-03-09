@@ -20,7 +20,7 @@ npm i
 yarn install
 ```
 
-#### 3. debes poner tu API_KEY en un archivo llamado `/env.local` para no tener problemas con las peticiones al servidor:
+#### 3. debes poner tu API_KEY en un archivo llamado `/.env.local` para no tener problemas con las peticiones al servidor:
 
 ![Code API_KEY](/src/assets/images/code-api_key.png "Code API_KEY")
 
